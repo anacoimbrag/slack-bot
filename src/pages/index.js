@@ -78,7 +78,7 @@ export default () => {
               />
               <Form.Text className="text-muted">
                 Verifique ou crie a url do webhook que deseja inserir{" "}
-                <a href="https://slack.com/apps/A0F7XDUAZ-incoming-webhooks">
+                <a href="https://slack.com/apps/A0F7XDUAZ-incoming-webhooks" target="_blank">
                   aqui
                 </a>. (Necessário login no workspace para ter acesso)
               </Form.Text>
