@@ -27,7 +27,7 @@ export default () => {
   )
 
   const send = () => {
-    fetch("https://boox-app.appspot.com/schedule", {
+    fetch("https://cloud.function.url/schedule", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -52,7 +52,7 @@ export default () => {
   }
 
   const getTasks = () => {
-    fetch("https://boox-app.appspot.com/list")
+    fetch("https://cloud.function.url/list")
       .then(res => res.json())
       .then(data => {
         console.log(data)
@@ -63,7 +63,7 @@ export default () => {
   return (
     <Container>
       <h3 as={Col} md={12} className="text-center mt-4">
-        Kobe - Envio de mensagens no slack
+        Envio de mensagens no slack
       </h3>
       <Row className="justify-content-md-center mt-4">
         <Col md={6}>
