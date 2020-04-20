@@ -19,7 +19,7 @@ This project is a web service for scheduling slack messages using [Incoming Webh
 3. Enable [Cloud Tasks API](https://console.cloud.google.com/apis/api/cloudtasks.googleapis.com/overview)
 
 **Download service account key**
-1. Go to [Service accounts](https://console.cloud.google.com/iam-admin/serviceaccounts?project=kobe-projects) page
+1. Go to [Service accounts](https://console.cloud.google.com/iam-admin/serviceaccounts) page
 
 2. Click on the service account with `Cloud Tasks Service Agent` role granted
 

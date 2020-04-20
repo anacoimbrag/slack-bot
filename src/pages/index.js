@@ -27,7 +27,7 @@ export default () => {
   )
 
   const send = () => {
-    fetch("https://boox-app.appspot.com/schedule", {
+    fetch("https://us-central1-kobe-slack.cloudfunctions.net/slack-bot/schedule", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -52,7 +52,7 @@ export default () => {
   }
 
   const getTasks = () => {
-    fetch("https://boox-app.appspot.com/list")
+    fetch("https://us-central1-kobe-slack.cloudfunctions.net/slack-bot/list")
       .then(res => res.json())
       .then(data => {
         console.log(data)

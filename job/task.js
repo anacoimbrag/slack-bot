@@ -1,7 +1,7 @@
 const { CloudTasksClient } = require("@google-cloud/tasks")
 
 const client = new CloudTasksClient()
-const parent = client.queuePath("boox-app", "us-central1", "slack-bot")
+const parent = client.queuePath("kobe-slack", "southamerica-east1", "slack-bot")
 
 exports.scheduleTask = async (url, image, image_title, text, inSeconds) => {
   console.log("start scheduling task..")

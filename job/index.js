@@ -50,10 +50,4 @@ app.get("*", (req, res) => {
   res.send("OK").end()
 })
 
-const PORT = process.env.PORT || 8080
-app.listen(process.env.PORT || 8080, () => {
-  console.log(`App listening on port ${PORT}`)
-  console.log("Press Ctrl+C to quit.")
-})
-
 module.exports = { app }
